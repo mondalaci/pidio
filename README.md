@@ -6,14 +6,17 @@ Raspberry Pi based wifi radio player featuring a blind-friendly pushbutton user 
 * concept, hardware, software, radio list
 * apt-get xyz
 
+pidio 3w idle, playing 3.4w
+playback delay from bootup: 93s
+
 Building the hardware
 ---------------------
 
-![front side of the button panel](photos/panel-front)
+![front side of the button panel](photos/panel-front.jpg)
 ![back side of the button panel](photos/panel-back.jpg)
-![panel half-stickified](photos/panel-half-stickified)
-![almost assembled unit](photos/almost-assembled)
-![fully assembled unit](photos/fully-assembled)
+![panel half-stickified](photos/panel-half-stickified.jpg)
+![almost assembled unit](photos/almost-assembled.jpg)
+![fully assembled unit](photos/fully-assembled.jpg)
 
 * double sided foam tape
 
