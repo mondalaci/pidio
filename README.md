@@ -12,3 +12,5 @@ visit http://www.listenlive.eu/hungary.html
 stations = $x('//table[@id="thetable3"]/tbody/tr/td[4]/a/@href')
 for (i=0; i<results.length; i++) console.log(results[i].value);
 copy-paste into hungarian-stations.m3u
+
+![back side of the button panel](photos/panel-back.jpg)
