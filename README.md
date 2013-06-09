@@ -36,11 +36,11 @@ I used double sided foam tape to fixate the panel:
 
 ![panel half-stickified](photos/panel-half-stickified.jpg)
 
-Almost assembled:
+Almost assembled unit:
 
 ![almost assembled unit](photos/almost-assembled.jpg)
 
-Fully assembled:
+Fully assembled unit:
 
 ![fully assembled unit](photos/fully-assembled.jpg)
 
