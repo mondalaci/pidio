@@ -1,13 +1,11 @@
 pidio
 =====
 
-Pidio is a Raspberry Pi based wifi radio player featuring a blind-friendly pushbutton user interface.
-
-Below is the picture of the pushbutton user interface.
+Pidio is a Raspberry Pi based wifi radio player featuring a blind-friendly pushbutton user interface.  Below is the picture of the user interface.
 
 ![front side of the button panel](photos/panel-front.jpg)
 
-The important thing to realize is that I've created this gadget for the grandmother of my girlfriend who is blind so I specifically designed the user interface to be blind-friendly.
+To understand my mindset regarding this interface you have to know that I created this gadget for the grandmother of my girlfriend who is blind so I specifically designed the user interface to be blind-friendly.  That's why I used a small number of tactile buttons with simple functionality.
 
 Pushbutton feature matrix
 
@@ -21,11 +19,6 @@ Pushbutton feature matrix
 | button 6 (white) | previous station | n/a                              |
 | button 7 (white) | next station     | stop / resume playback           |
 
-* concept, hardware, software, radio list
-* apt-get xyz
-
-pidio 3w idle, playing 3.4w
-playback delay from bootup: 93s
 
 Building the hardware
 ---------------------
@@ -36,6 +29,7 @@ Building the hardware
 ![fully assembled unit](photos/fully-assembled.jpg)
 
 * double sided foam tape
+* wifi dongle (exact type)
 
 Retrieving Hungarian radio stations
 -----------------------------------
@@ -46,3 +40,7 @@ Retrieving Hungarian radio stations
 `for (i=0; i<results.length; i++) console.log(results[i].value);`
 3. Copy-pasted the output into [my-stations.m3u](my-stations.m3u)
 
+* apt-get xyz
+
+pidio 3w idle, playing 3.4w
+playback delay from bootup: 93s
