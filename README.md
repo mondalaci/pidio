@@ -5,7 +5,7 @@ Pidio is a Raspberry Pi based wifi radio player featuring a blind-friendly pushb
 
 ![front side of the button panel](photos/panel-front.jpg)
 
-To understand my mindset regarding this interface you have to know that I created this gadget for the grandmother of my girlfriend who is blind so I specifically designed the user interface to be blind-friendly.  That's why I used a small number of tactile buttons with simple functionality.
+To understand my thinking regarding this interface you have to know that I created this gadget for the grandmother of my girlfriend who is blind so I specifically designed the user interface to be blind-friendly.  That's why I used a small number of tactile buttons with simple functionality.
 
 Pushbutton feature matrix:
 
@@ -19,7 +19,7 @@ Pushbutton feature matrix:
 | button 6 (white) | previous station | n/a                              |
 | button 7 (white) | next station     | stop / resume playback           |
 
-I originally wanted to enable the user to shut down / power up the Pi and considering that the boot time is 93 seconds it would have provided a bad user experience.  Also the Pi only consumes 3W idle, and 3.4W when streaming.  The stop / resume playback button still makes sense because of conserving bandwidth.
+I originally wanted to enable the user to shut down / power up the Pi but considering that the boot time is 93 seconds it would have provided a bad user experience.  Also, the Pi only consumes 3W idle, and 3.4W when streaming.  The stop / resume playback button is still useful to conserve bandwidth.
 
 Building the hardware
 ---------------------
