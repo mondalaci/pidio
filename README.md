@@ -19,6 +19,7 @@ Pushbutton feature matrix:
 | button 6 (white) | previous station | n/a                              |
 | button 7 (white) | next station     | stop / resume playback           |
 
+I originally wanted to enable the user to shut down / power up the Pi and considering that the boot time is 93 seconds it would have provided a bad user experience.  Also the Pi only consumes 3W idle, and 3.4W when streaming.  The stop / resume playback button still makes sense because of conserving bandwidth.
 
 Building the hardware
 ---------------------
@@ -59,8 +60,3 @@ Retrieving Hungarian radio stations
 `for (i=0; i<results.length; i++) console.log(results[i].value);`
 3. Copy-pasted the output into [hungarian-stations-all.m3u](stations/hungarian-stations-all.m3u)
 4. Ditched all the invalid stations and created [hungarian-stations-filtered.m3u](stations/hungarian-stations-filtered.m3u)
-
-* apt-get xyz
-
-pidio 3w idle, playing 3.4w
-playback delay from bootup: 93s
