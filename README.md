@@ -27,6 +27,10 @@ You've already seen the pushbutton user interface.  This is the back side:
 
 ![back side of the button panel](photos/panel-back.jpg)
 
+The circuit is really nothing more than 7 switch circuits (courtesy of Adafruit Industries).
+
+![switch schematic](photos/switch-schematic.png)
+
 I used double sided foam tape to fixate the panel:
 
 ![panel half-stickified](photos/panel-half-stickified.jpg)
