@@ -45,6 +45,11 @@ Fully assembled:
 
 You can only partially see the Edimax EW-7811UN USB wifi dongle that is understandably a critical piece of this wifi radio.
 
+Software
+--------
+
+I started out from a [somewhat related project of Adafruit](http://learn.adafruit.com/playing-sounds-and-using-buttons-with-raspberry-pi/code).  The resulting [code](pidio.py) seems solid despite of the ugly workarounds that I had to use.
+
 Retrieving Hungarian radio stations
 -----------------------------------
 
