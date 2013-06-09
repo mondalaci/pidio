@@ -7,7 +7,7 @@ Pidio is a Raspberry Pi based wifi radio player featuring a blind-friendly pushb
 
 To understand my mindset regarding this interface you have to know that I created this gadget for the grandmother of my girlfriend who is blind so I specifically designed the user interface to be blind-friendly.  That's why I used a small number of tactile buttons with simple functionality.
 
-Pushbutton feature matrix
+Pushbutton feature matrix:
 
 | button           | short press      | long press (at least 2 seconds)  |
 |------------------|------------------|----------------------------------|
@@ -23,13 +23,23 @@ Pushbutton feature matrix
 Building the hardware
 ---------------------
 
+You've already seen the pushbutton user interface.  This is the back side:
+
 ![back side of the button panel](photos/panel-back.jpg)
+
+I used double sided foam tape to fixate the panel:
+
 ![panel half-stickified](photos/panel-half-stickified.jpg)
+
+Almost assembled:
+
 ![almost assembled unit](photos/almost-assembled.jpg)
+
+Fully assembled:
+
 ![fully assembled unit](photos/fully-assembled.jpg)
 
-* double sided foam tape
-* wifi dongle (exact type)
+You can only partially see the Edimax EW-7811UN USB wifi dongle that is understandably a critical piece of this wifi radio.
 
 Retrieving Hungarian radio stations
 -----------------------------------
