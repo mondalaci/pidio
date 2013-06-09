@@ -1,5 +1,10 @@
 #!/usr/bin/env python
 
+# Killing and restarting mpd this hardcore might make me seem like an amateur
+# bastard but for the record you have know that I started out with the Python
+# MPD client library which would have been the right approach to take if MPD
+# wasn't so supremely unstable.
+
 from time import sleep
 import RPi.GPIO as GPIO
 import pickle
