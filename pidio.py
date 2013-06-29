@@ -5,26 +5,13 @@
 # MPD client library which would have been the right approach to take if MPD
 # wasn't so supremely unstable.
 
+from sys import stdout
 from time import sleep
 import RPi.GPIO as GPIO
 import pickle
 from os import system
 from os.path import expanduser, basename
 from urllib2 import urlopen
-
-# The following unbuffers stdout.  Useful if you want to log script output and tail it real-time.
-
-class Unbuffered:
-   def __init__(self, stream):
-       self.stream = stream
-   def write(self, data):
-       self.stream.write(data)
-       self.stream.flush()
-   def __getattr__(self, attr):
-       return getattr(self.stream, attr)
-
-import sys
-sys.stdout=Unbuffered(sys.stdout)
 
 # Define constants and initialize globals.
 
@@ -45,6 +32,19 @@ NEXT_BUTTON_INDEX = 6
 button_gpio_numbers = [7, 8, 15, 23, 25, 18, 14]
 button_press_lengths = [0 for button_gpio_number in button_gpio_numbers]
 is_playback_active = False
+
+# The following unbuffers stdout.  Useful if you want to log script output and tail it real-time.
+
+class Unbuffered:
+   def __init__(self, stream):
+       self.stream = stream
+   def write(self, data):
+       self.stream.write(data)
+       self.stream.flush()
+   def __getattr__(self, attr):
+       return getattr(self.stream, attr)
+
+stdout=Unbuffered(stdout)
 
 # Event handlers
 
