@@ -12,6 +12,8 @@ from os import system
 from os.path import expanduser, basename
 from urllib2 import urlopen
 
+# The following unbuffers stdout.  Useful if you want to log script output and tail it real-time.
+
 class Unbuffered:
    def __init__(self, stream):
        self.stream = stream
