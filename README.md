@@ -51,7 +51,7 @@ Software
 
 I started out from a [somewhat related project of Adafruit Industries](http://learn.adafruit.com/playing-sounds-and-using-buttons-with-raspberry-pi/code).  The resulting [code](pidio.py) seems solid despite of the ugly workarounds that I had to use because of the supremely unstable `mpd`.
 
-First `apt-get install python-dev python-rpi.gpio mpd mpc`.  After trying to start up `pidio.py` from a custom-written init script which failed over and over again for some reason I simply included `/root/pidio/pidio.py &` into `/etc/rc.local` which did the trick.
+First `apt-get install python-dev python-rpi.gpio mpd mpc`.  After trying to start up `pidio.py` from a custom-written init script which failed over and over for some reason I simply included `/root/pidio/pidio.py &` into `/etc/rc.local` which did the trick.
 
 Retrieving Hungarian radio stations
 -----------------------------------
