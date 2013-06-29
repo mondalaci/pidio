@@ -100,7 +100,7 @@ def play_station(station_url):
         current_playlist = urlopen(station_url, None, STATION_FETCH_TIMEOUT).read()
         with open(expanduser(CURRENT_STATION_PLAYLIST), "w") as station_file:
             station_file.write(current_playlist)
-        system('(killall -9 mpd mpc; /etc/init.d/mpd start; mpc clear; mpc load %s; mpc play) >/dev/null 2>&1 &' %
+        system('(killall -9 mpd mpc; service mpd start; mpc clear; mpc load %s; mpc play) >/dev/null 2>&1 &' %
                (basename(CURRENT_STATION_PLAYLIST)))
         print 'playing', station_url
         is_playback_active = True;
