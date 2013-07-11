@@ -16,8 +16,8 @@ from urllib2 import urlopen
 # Define constants and initialize globals.
 
 ALL_STATIONS_PLAYLIST = '~/pidio/my-stations.m3u'
-CURRENT_STATION_PLAYLIST = '/var/lib/mpd/playlists/current-station.m3u';
-STATE_FILE = '~/pidio/state.pkl';
+CURRENT_STATION_PLAYLIST = '/var/lib/mpd/playlists/current-station.m3u'
+STATE_FILE = '~/pidio/state.pkl'
 
 INITIAL_VOLUME = 100  # percent
 
@@ -44,7 +44,7 @@ class Unbuffered:
    def __getattr__(self, attr):
        return getattr(self.stream, attr)
 
-stdout=Unbuffered(stdout)
+stdout = Unbuffered(stdout)
 
 # Event handlers
 
@@ -151,7 +151,7 @@ try:
     current_station_index = state['current_station_index']
     button_presets = state['button_presets']
 except:
-    current_station_index = 0;
+    current_station_index = 0
     button_presets = [None for button_gpio_number in button_gpio_numbers]
     save_state()
 
