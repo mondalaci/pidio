@@ -24,6 +24,8 @@ I originally wanted to enable the user to shut down / power up the Pi but consid
 Building the hardware
 ---------------------
 
+*A word of warning*: Please do not buy a noname Chinese shit power supply!  My first power supply died within weeks.  The second didn't provide enough power to drive the wifi dongle.  Buy a power supply from a known brand and you'll be fine.
+
 You've already seen the pushbutton user interface.  This is the back side:
 
 ![back side of the button panel](photos/panel-back.jpg)
@@ -52,6 +54,8 @@ Software
 I started out from a [somewhat related project of Adafruit Industries](http://learn.adafruit.com/playing-sounds-and-using-buttons-with-raspberry-pi/code).  The resulting [code](pidio.py) seems solid despite of the ugly workarounds that I had to use because of the supremely unstable `mpd`.
 
 First `apt-get install python-dev python-rpi.gpio mpd mpc`.  After trying to start up `pidio.py` from a custom-written init script which failed over and over for some reason I simply included `/root/pidio/pidio.py &` into `/etc/rc.local` which did the trick.
+
+If you ever decide to improve my work please consider using something other than mpd.  Given that it needs to be restarted from time to time its daemon nature is actually a disadvantage.  Also, being able to provide the size of the streaming buffer would be vastly usable for poor connections.
 
 Retrieving Hungarian radio stations
 -----------------------------------
